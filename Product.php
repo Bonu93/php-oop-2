@@ -12,7 +12,9 @@ class Product {
         $this->brand = $_brand;
     }
 
-    
+    public function getSale($discount) {
+        return $this->price - ($this->price * $discount / 100);
+    }
 }
 
 
